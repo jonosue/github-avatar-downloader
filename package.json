@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jonosue/github-avatar-downloader-jonosue/issues"
   },
-  "homepage": "https://github.com/jonosue/github-avatar-downloader-jonosue#readme"
+  "homepage": "https://github.com/jonosue/github-avatar-downloader-jonosue#readme",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
 }
