@@ -31,7 +31,8 @@ I have your file in my current folder
 
 When
 
-I execute your file using node, providing a github user and repository as command-line arguments For example: $ node download_avatars.js nodejs node
+I execute your file using node, providing a github user and repository as command-line arguments For example:
+`$ node download_avatars.js nodejs node`
 
 
 Then
