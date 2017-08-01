@@ -14,7 +14,7 @@ var name = process.argv[3];
 function getRepoContributors(repoOwner, repoName, cb) {
 // Added logic to enforce command-line arguments. If the two arguments are not passed, then the program fails. Otherwise, it proceeds normally.
   if (!owner || !name) {
-    console.log("USER ERROR. Please enter two arguments. The first should be the GitHub username of the repo owner, and the second should be the repo name. Please note, the repo must be public." + "\n" + "\n")
+    console.log("USER ERROR. Please enter two arguments. The first should be the GitHub username of the repo owner, and the second should be the repo name. Please note, the repo must be public." + "\n" + "\n");
   }
   else {
 // We need to define our URL in this format, in order to pass 'User-Agent' in the headers.
@@ -53,7 +53,7 @@ function downloadImageByURL(url, filePath) {
 getRepoContributors(owner, name, function(err, result) {
 // Throw an error if there is an issue.
   if (err) {
-    console.log('There was an error with your request. Please ensure that you have spelled the user name and repo name correctly.')
+    console.log('There was an error with your request. Please ensure that you have spelled the user name and repo name correctly.');
   }
   else {
     for (var x in result) {
