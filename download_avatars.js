@@ -4,6 +4,7 @@ var fs = require('fs');
 var GITHUB_USER = "jonosue";
 var GITHUB_TOKEN = "a3efe2b10af74e29f9ccd2b8e587117f553f562d";
 
+
 function getRepoContributors(repoOwner, repoName, cb) {
 
   var options = {
@@ -17,20 +18,37 @@ function getRepoContributors(repoOwner, repoName, cb) {
     if (err) throw err;
     cb(err, JSON.parse(response.body));
 
-});
+  });
+
+};
 
 
-}
+function downloadImageByURL(url, filePath) {
+
+  request.get(url)
+
+  .on('error', function (err) {
+    throw err;
+    console.log('There was an error with your request.')
+  })
+
+  .on('end', function() {
+    console.log('Image download complete.');
+  })
+
+  .pipe(fs.createWriteStream(filePath));
+
+
+
 
 getRepoContributors("jquery", "jquery", function(err, result) {
   if (err) {
     console.log(err);
   }
   else {
-    for (var listItem in result) {
-    console.log(result[listItem].avatar_url)
+    for (var x in result) {
+      var avatarRes = result[x].avatar_url;
+      var urlRes = result[x].login;
     }
   }
 });
-
-
