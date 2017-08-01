@@ -38,7 +38,7 @@ function downloadImageByURL(url, filePath) {
 
   .pipe(fs.createWriteStream(filePath));
 
-}
+};
 
 
 getRepoContributors("jquery", "jquery", function(err, result) {
@@ -46,7 +46,10 @@ getRepoContributors("jquery", "jquery", function(err, result) {
     console.log(err);
   }
   else {
-
+    for (var x in result) {
+      var avatarURL = result[x].avatar_url;
+      var downloadPath = './avatars/' + result[x].login + '.jpg';
+      downloadImageByURL(avatarURL, downloadPath);
     }
   }
 });
