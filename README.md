@@ -1,4 +1,4 @@
-# GitHub Avatar Downloader, by Jono Sue
+# GitHub Avatar Downloader, by Jonathan Sue
 
 
 ## Background
