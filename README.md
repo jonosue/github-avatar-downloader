@@ -56,4 +56,4 @@ Then...
 Questions? Comments? Please tweet me at [@JonoSue](http://twitter.com/JonoSue).
 
 
-*README: Last updated August 10, 2017*
+*README: Last updated August 24, 2017*
