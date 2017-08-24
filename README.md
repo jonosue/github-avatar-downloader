@@ -1,4 +1,4 @@
-# GitHub Avatar Downloader, by Jonathan Sue
+# Jonathan Sue's "TinyApp" Project (Lighthouse Labs)
 
 
 ## Background
